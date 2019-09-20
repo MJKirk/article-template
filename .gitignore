@@ -1,0 +1,4 @@
+*.pdf
+!figs/*.pdf
+*.bbl
+*.synctex.gz
