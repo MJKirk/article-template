@@ -1,6 +1,7 @@
 \documentclass[a4paper,11pt]{article}
 
 % General LaTeX stuff
+\usepackage{geometry} % More reasonable margins
 \usepackage[utf8]{inputenc} % utf8 input good for non-ascii characters
 \usepackage[T1]{fontenc} % Good for hyphenating non-ascii characters
 \usepackage{lmodern}
@@ -13,8 +14,6 @@
 \usepackage{microtype} % Improves typesetting
 \usepackage[margin=15mm,hang]{caption} % Format captions
 \usepackage{xfrac} % Nice small fractions
-\usepackage{perpage} % Allows to reset counters on each page
-\MakePerPage{footnote} % Resets footnote counters on each page
 % Ensure all figures are centred by default
 \makeatletter
 \g@addto@macro\@floatboxreset\centering
@@ -30,7 +29,7 @@
 
 % References and citations
 \usepackage{cite} % Combine multiple citations in range
-\usepackage[capitalise,noabbrev]{cleveref} % Add automatic reference type text via \cref command
+\usepackage[capitalise]{cleveref} % Add automatic reference type text via \cref command
 \creflabelformat{equation}{\textup{#2#1#3}} % Removes bracket around equation numbers when referencing
 
 % Better tables
@@ -93,7 +92,7 @@ PRE/PRINT/NUMBERS
 
 \begin{center}
 \vspace*{1cm}
-{\LARGE\bfseries%\boldmath
+{\LARGE\bfseries
 Paper title with $\Delta = 1$
 }
 \\[0.8 cm]
@@ -118,7 +117,7 @@ E-mail:
 \begin{abstract}
 \end{abstract}
 
-\newpage
+{\small \tableofcontents}
 
 \section{Introduction}
 \label{sec:intro}
