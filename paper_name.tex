@@ -83,6 +83,10 @@
 \newcommand{\authornote}[3]{{\color{#2}{\footnotesize [#1: #3]}}}
 \newcommand{\MK}[1]{\authornote{MK}{red}{#1}}
 
+% Adds PDF metadata
+\author{Matthew Kirk, Author 2}
+\title{Paper title with \texorpdfstring{$\Delta = 1$}{Delta = 1}}
+
 
 \begin{document}
 
@@ -93,7 +97,7 @@ PRE/PRINT/NUMBERS
 \begin{center}
 \vspace*{1cm}
 {\LARGE\bfseries
-Paper title with $\Delta = 1$
+\makeatletter\@title\makeatother
 }
 \\[0.8 cm]
 \textsc{
