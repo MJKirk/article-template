@@ -47,12 +47,13 @@
 \usepackage{slashed} % Adds Dirac slash notation
 \usepackage{siunitx} % Add support for units
 \sisetup{
-	separate-uncertainty, % uncertainties with +- symbol, 
+	uncertainty-mode = separate, % uncertainties with +- symbol,
 	range-phrase = --, % ranges with dash
 	range-units = single % only write unit once
 } 
-\DeclareSIUnit\fb{\femto\barn}
-\DeclareSIUnit\invps{\ps^{-1}}
+\DeclareSIUnit{\barn}{b}
+\DeclareSIUnit{\fb}{\femto\barn}
+\DeclareSIUnit{\invps}{\per\ps}
 \usepackage{suffix} % Allows us to define a starred command, for CKM macro later
 
 % General maths macros
